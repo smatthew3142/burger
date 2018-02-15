@@ -11,18 +11,18 @@ var burger = {
 		});
 	},
 
-	insertOne: function(newVal, cb){
+	insertOne: function(cols, vals, cb){
 
-		orm.insertOne("burgers", "burger_name", newVal, function(result){
+		orm.insertOne("burgers", cols, vals, function(result){
 
 			cb(result);
 
 		});
 	},
 
-	updateOne: function(conditionVal, cb){
+	update: function(objColVals, condition, cb){
 
-		orm.updateOne("burgers", "id", conditionVal, function(result){
+		orm.update("burgers", objColVals, condition, function(result){
 
 			cb(result);
 		});
