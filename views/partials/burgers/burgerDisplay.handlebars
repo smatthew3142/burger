@@ -1,7 +1,8 @@
-<li>
+<div id="listItem" class="burgerList">
+	<img id= "icon" src="./assets/images/32x32.png">
 	{{this.id}}. {{this.burger_name}}
 
-	<button class="change-devoured" data-id="{{id}}" data-newDevour="{{devour}}">
+	<button class="change-devoured" class="btn btn-default" data-id="{{id}}" data-newDevour="{{devour}}">
 		{{#if this.devour}}DEVOUR!{{/if}}
 	</button>
-</li>
+</div>
